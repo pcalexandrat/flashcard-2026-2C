@@ -43,7 +43,9 @@ main {
 }
 
 .cartao-interno { 
-  position: relative; 
+  position: relative;
+  transition: transform 0.8s; 
+  transform-style: preserve-3d;  
 } 
 
 .cartao-frente, 
@@ -51,6 +53,20 @@ main {
   position: absolute; 
   border-radius: 12px; 
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
+  backface-visibility: hidden; 
+} 
+
+.cartao-verso { 
+  transform: rotateY(180deg); 
+} 
+
+.cartao:hover .cartao-interno { 
+  transform: rotateY(180deg); 
+} 
+
+section { 
+  display: flex; 
+  gap: 16px; 
 } 
 
 footer { 
