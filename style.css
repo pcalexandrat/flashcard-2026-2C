@@ -59,11 +59,11 @@ main {
   backface-visibility: hidden; 
 } 
 
-.cartao-verso { 
+.cartao:hover .cartao-interno { 
   transform: rotateY(180deg); 
 } 
 
-.cartao:hover .cartao-interno { 
+.cartao-verso { 
   transform: rotateY(180deg); 
 } 
 
