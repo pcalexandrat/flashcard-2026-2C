@@ -50,7 +50,6 @@ main {
     width: 100%;
 }
 
-/*
 .cartao-interno { 
   position: relative;
   transition: transform 0.8s; 
@@ -72,7 +71,7 @@ main {
 .cartao-verso { 
   transform: rotateY(180deg); 
 } 
-*/
+
 section { 
   display: flex; 
   /*gap: 16px; */
